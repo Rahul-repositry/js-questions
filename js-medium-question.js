@@ -68,10 +68,10 @@ function binarySearch(arr, el) {
     while (start <= end) {
         let middle = Math.floor((start + end) / 2);
 
-        if (sortedArray[middle] === key) {
+        if (arr[middle] === el) {
             // found the key
             return middle;
-        } else if (sortedArray[middle] < key) {
+        } else if (arr[middle] < el) {
             // continue searching to the right
             start = middle + 1;
         } else {
